@@ -156,20 +156,109 @@
         
     </section>
 
-    <section class="container-lg">
+    <section class="container-lg" >
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/vehicle-3090205_1920.jpg" class="d-block w-100" alt="carrera911">
+              </div>
+              <div class="carousel-item">
+                <img src="img/car-racing-4460629_1920.jpg" class="d-block w-100" alt="racing">
+              </div>
+              <div class="carousel-item">
+                <img src="img/mercedes-1571776.jpg" class="d-block w-100" alt="drifting-2396992_1920">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ford-mustang-2342343.jpg" class="d-block w-100" alt="drifting-2396992_1920">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"><</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">></span>
+            </button>
+          </div>
+
 
     </section>
 
-    <section class="container-lg">
+    <section id="cuestionario" class="container-lg" >
+        <div id="cuest"></div>
+            <div>
+            <p > Puede completar una breve encuesta sobre su vehiculo 
+            </p>
+        </div>
+       
+        <div> 
+            <form>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="checkbox-auto" onchange="habilitardatos()">
+                  <label class="form-check-label" for="checkbox-auto">Tengo Auto</label>
+                </div>
+                <form id="datos" class="row g-3 needs-validation">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="respuesta" aria-describedby="emailHelp" placeholder="nombre@correo.com" required>
+                    <div id="emailHelp" class="form-text"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="form-text" class="form-label">Marca</label>
+                    <input type="text" class="form-control" id="respuesta" placeholder="FIAT, AUDI, BMW..." required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="form-text" class="form-label">Modelo</label>
+                    <input type="text" class="form-control" id="respuesta" placeholder="Corsa, Passat, Civic..." required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="form-text" class="form-label">Año</label>
+                    <input type="text" class="form-control" id="respuesta" placeholder="0000" required pattern="[0-9]{4}" >
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </form>
 
+    </section>
+
+    <section id="test" class="container-lg">
+            <div class="row">
+                <a href="test.html" target="new"><p>Ponte a prueba en nuestro TEST</p></a>
+            </div>
+        
+        
+            <div class="row">
+                <div class="col-6 mx-auto">
+                    <a href="test.html" target="new">
+                    <img src="img/testauto.png" alt="test" class="img-fluid" class="img-thumbnail" class="rounded mx-auto d-block">
+                    </a>
+                </div>
+            </div>
+        
     </section>
     
     
-    <Footer>
+    <Footer class="container-lg">
+        <div class="row">
+        <div class="col col-lg-6"> <nav id="botones_fot">
+            <ul>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Articulos</a></li>
+                <li><a href="#">Modelos</a></li>
+                <li><a href="#">Sugerencias</a></li>
+            </ul>
+        </div>
+        </div>
 
     </Footer>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>    
+
+    <script> src="js/test.js" </script>
+        
+    
+
 </body>
 </html>
